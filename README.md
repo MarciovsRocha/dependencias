@@ -15,7 +15,13 @@ exemplos de URL's suportadas:
 * `https://github.com/username/repo.git` *(Baixar um repositório)*
 * `https://raw.githubusercontent.com/user/repo/branch/arquivo` *(Baixar um único arquivo de um repositório)*
 
+Padrões caso não sejam informados os parâmetros:
 
+    user = MarciovsRocha
+    repo = public-scripts
+    branch = master
+    tipo = CURL
+    protocolo = SSH (caso o tipo seja via GIT)
 
 ### Header
 
@@ -33,4 +39,8 @@ O parâmetro *usuário* serve para indicar o dono do repositório em questão, u
 
 ### Repositório
 
-O parâmetro *"repositório"* serve para indicar qual reposiutório utilizar para realizar o [clone || download] do(s) arquivos, utilize a *flag* `-r`. Note que este parâmetro diferente do *Header* **não** utiliza um conector ao final.
+O parâmetro *"repositório"* serve para indicar qual repositório utilizar para realizar o [clone || download] do(s) arquivos, utilize a *flag* `-r`. Note que este parâmetro diferente do *Header* **não** utiliza um conector ao final.
+
+### Branch
+
+O parâmetro *"branch"* serve para indicar de qual branch do repositório em questão será utilizada, utilize a *flag* `-b`. Note que este parâmetro diferente do *Header* **não** utiliza um conector ao final.
