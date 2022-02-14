@@ -19,9 +19,7 @@ exemplos de URL's suportadas:
 
 ### Header
 
-O parâmetro *header* serve para indicar o *"cabeçalho"* da URL, utilize a *flag* `-h`. Note que o "cabeçalho" possui o *conector* para o próximo parâmetro.
-
-Este parâmetro é facultativo caso a maneira especificada seja via *CURL*.
+O parâmetro *header* serve para indicar o *"cabeçalho"* da URL, utilize a *flag* `-h`. Note que o "cabeçalho" possui o *conector* para o próximo parâmetro. Caso não seja especifiado o cabeçalho serão utilizados os padrões pré-definidos para cada ocasião.
 
 Exemplos de cabeçalhos: 
 
@@ -31,5 +29,4 @@ Exemplos de cabeçalhos:
 
 ### Usuário 
 
-O parâmetro usuário serve para indicar o dono do repositório em questão
-
+O parâmetro *usuário* serve para indicar o dono do repositório em questão, utilize a *flag* `-u`. Note que este parâmetro diferente do *Header* não utiliza um conector ao final.
