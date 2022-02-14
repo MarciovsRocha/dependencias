@@ -33,18 +33,48 @@ Exemplos de cabeçalhos:
 * `https://github.com/` *(conector **"/"**)*
 * `https://raw.githubusercontent.com/` *(conector **"/"**)*
 
+Valores aceitos
+
+* Informe o *"cabeçalho"* por extenso
+
 ### Usuário 
 
 O parâmetro *usuário* serve para indicar o dono do repositório em questão, utilize a *flag* `-u`. Note que este parâmetro diferente do *Header* **não** utiliza um conector ao final.
+
+Valores aceitos
+
+* Informe o nome do usuário por extenso
 
 ### Repositório
 
 O parâmetro *"repositório"* serve para indicar qual repositório utilizar para realizar o [clone || download] do(s) arquivos, utilize a *flag* `-r`. Note que este parâmetro diferente do *Header* **não** utiliza um conector ao final.
 
+Valores aceitos
+
+* Informe o nome do repositório por extenso.
+
 ### Branch
 
 O parâmetro *"branch"* serve para indicar de qual branch do repositório em questão será utilizada, utilize a *flag* `-b`. Note que este parâmetro diferente do *Header* **não** utiliza um conector ao final.
 
+Valores aceitos
+
+* Informe o nome da branch por extenso.
+
 ### Tipo
 
 O parâmetro *"tipo"* serve para indicar qual forma será utilizada para baixar o(s) arquivo(s) (CURL || GIT), utilize a *flag* `-t`. Note que este parâmetro diferente do *Header* **não** utiliza um conector ao final.
+
+Valores aceitos
+
+* c $\rightarrow$ CURL
+* g $\rightarrow$ GIT
+
+### Protocolo
+
+O parâmetro *"protocolo"* serve para indical qual protocolo será utilizado para baixar os arquivos, este parâmetro só é utilizado caso o *Tipo* seja ***via GIT***, utilize a flag `-p`. Note que este parâmetro diferente do *Header* **não** utiliza um conector ao final.
+
+Valores aceitos
+
+* s $\rightarrow$ SSH
+* h $\rightarrow$ HTTPS
