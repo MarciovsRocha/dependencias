@@ -53,6 +53,7 @@ while getopts f:h:u:r:b:t:p: flag; do
 done
 
 baixar(){
+    echo "Baixando arquivo(s)..."
 # TODO -c "Trocar IF's por CASE." -t OTIMIZACAO
     if [ c = "$tipo" ] ; then
         if [ -z "$header" ] ; then 
@@ -68,11 +69,8 @@ baixar(){
             echo "Não foi especificada uma branch."
             exit 1
         fi
-
-        echo "Baixando arquivo..."    
         curl -o file "$header/$user/$repo/$branch/$file" && return 0 || return 1
     elif [ g = "$tipo" ] ; then
-        echo "Baixando arquivos..."
         case "${protocolo}" in
             s)
                 header="git@github:"
