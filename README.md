@@ -29,4 +29,8 @@ Exemplos de cabeçalhos:
 
 ### Usuário 
 
-O parâmetro *usuário* serve para indicar o dono do repositório em questão, utilize a *flag* `-u`. Note que este parâmetro diferente do *Header* não utiliza um conector ao final.
+O parâmetro *usuário* serve para indicar o dono do repositório em questão, utilize a *flag* `-u`. Note que este parâmetro diferente do *Header* **não** utiliza um conector ao final.
+
+### Repositório
+
+O parâmetro *"repositório"* serve para indicar qual reposiutório utilizar para realizar o [clone || download] do(s) arquivos, utilize a *flag* `-r`. Note que este parâmetro diferente do *Header* **não** utiliza um conector ao final.
