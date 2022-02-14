@@ -65,7 +65,7 @@ baixar(){
             return 1
         fi
 
-        if [ -z "$branch" ] then
+        if [ -z "$branch" ] ; then
             echo "Não foi especificada uma branch."
             exit 1
         fi
