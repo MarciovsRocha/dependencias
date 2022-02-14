@@ -53,6 +53,7 @@ while getopts f:h:u:r:b:t:p: flag; do
 done
 
 baixar(){
+# TODO -c "Trocar IF's por CASE." -t OTIMIZACAO
     if [ c = "$tipo" ] ; then
         if [ -z "$header" ] ; then 
             header="https://raw.githubusercontent.com" ;
@@ -61,6 +62,11 @@ baixar(){
         if [ -z "$file" ] || [ "None" = "$file" ] ; then
             echo "Arquivo para download não especificado"
             return 1
+        fi
+
+        if [ -z "$branch" ] then
+            echo "Não foi especificada uma branch."
+            exit 1
         fi
 
         echo "Baixando arquivo..."    
