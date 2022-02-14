@@ -44,3 +44,7 @@ O parâmetro *"repositório"* serve para indicar qual repositório utilizar para
 ### Branch
 
 O parâmetro *"branch"* serve para indicar de qual branch do repositório em questão será utilizada, utilize a *flag* `-b`. Note que este parâmetro diferente do *Header* **não** utiliza um conector ao final.
+
+### Tipo
+
+O parâmetro *"tipo"* serve para indicar qual forma será utilizada para baixar o(s) arquivo(s) (CURL || GIT), utilize a *flag* `-t`. Note que este parâmetro diferente do *Header* **não** utiliza um conector ao final.
