@@ -19,11 +19,17 @@ exemplos de URL's suportadas:
 
 ### Header
 
-O parâmetro para indicar o *"cabeçalho"* da URL é o `-h`. Note que o "cabeçalho" possui o *conector* para o próximo parâmetro
+O parâmetro *header* serve para indicar o *"cabeçalho"* da URL, utilize a *flag* `-h`. Note que o "cabeçalho" possui o *conector* para o próximo parâmetro.
+
+Este parâmetro é facultativo caso a maneira especificada seja via *CURL*.
 
 Exemplos de cabeçalhos: 
 
 * `git@github:` *(conector **":"**)*
 * `https://github.com/` *(conector **"/"**)*
 * `https://raw.githubusercontent.com/` *(conector **"/"**)*
+
+### Usuário 
+
+O parâmetro usuário serve para indicar o dono do repositório em questão
 
