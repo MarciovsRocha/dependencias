@@ -21,7 +21,7 @@ protocolo="ssh"
 file="None"
 
 echo "Montando url para arquivo(s)..."
-
+# TODO -c "Alterar flags com argumentos para flags booleanas" -t OTIMIZACAo
 while getopts f:h:u:r:b:t:p: flag; do
     case "${flag}" in
         f) 
